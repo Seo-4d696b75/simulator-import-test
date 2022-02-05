@@ -1,0 +1,18 @@
+{
+  "name": "station-simulator-import-test",
+  "version": "0.0.1",
+  "description": "this is test of importing my node module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^17.0.15",
+    "ekimemo-access-simulator": "github:Seo-4d696b75/station-access-simulator",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
