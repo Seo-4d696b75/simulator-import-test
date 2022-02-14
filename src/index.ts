@@ -9,15 +9,15 @@ init().then(() => {
   let seria = DencoManager.getDenco(context, "1", 50)
   offense = changeFormation(context, offense, [reika, seria])
   let defense = initUser(context, "user2", [charlotte])
-  offense = activateSkill(context, { ...offense, carIndex: 0 })
+  offense = activateSkill(context, offense, 0)
   let config: AccessConfig = {
     offense: {
       carIndex: 0,
-      ...offense
+      state: offense
     },
     defense: {
       carIndex: 0,
-      ...defense
+      state: defense
     },
     station: charlotte.link[0]
   }
